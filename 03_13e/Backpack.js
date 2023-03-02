@@ -58,3 +58,5 @@ class Books{
     this.price.bangladesh = bdt;
   }
 }
+
+export default Books;
