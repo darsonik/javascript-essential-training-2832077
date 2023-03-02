@@ -37,3 +37,24 @@ class Backpack {
 }
 
 export default Backpack;
+
+class Books{
+  constructor(title,pages,priceIN,priceBD,publishDate,author,available){
+    this.title = title;
+    this.pages = pages;
+    this.price = {
+      india : 120,
+      bangladesh : 135,
+    }
+    this.publishDate = publishDate;
+    this.author = author;
+    this.available = available;
+  }
+  isAvailable(availStatus){
+    this.available = availStatus;
+  }
+  isPriceChange(inr,bdt){
+    this.price.india = inr;
+    this.price.bangladesh = bdt;
+  }
+}
